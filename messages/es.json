@@ -1,0 +1,376 @@
+{
+  "Meta": {
+    "siteName": "etarq studio",
+    "ogImageAlt": "Barra de café renderizada con muros de yeso ocre, gabinetes de madera, lámparas colgantes rojas y un marco de acero y vidrio verde claro, junto a una escalera y una ventana en arco de azulejo rojo",
+    "home": {
+      "title": "etarq studio — Arquitectura + Diseño en la Ciudad de México",
+      "description": "Materia, espacio y vida cotidiana. etarq studio es un despacho de arquitectura y diseño con sede en la Ciudad de México: espacios que transmiten sensaciones y cuentan historias."
+    },
+    "projects": {
+      "title": "Proyectos — etarq studio",
+      "description": "Cafés, bares, restaurantes, salones y viviendas: una selección de proyectos de etarq studio."
+    },
+    "studio": {
+      "title": "Estudio — etarq studio",
+      "description": "etarq studio: la unión de diversos actores en la arquitectura. Conoce el estudio, sus cifras y su equipo."
+    },
+    "approach": {
+      "title": "Cómo trabajamos — etarq studio",
+      "description": "Cuatro etapas, del inicio de proyecto a la supervisión de obra: así trabaja etarq studio."
+    },
+    "contact": {
+      "title": "Contacto — etarq studio",
+      "description": "Cuéntanos sobre tu proyecto. Escribe a etarq studio por Instagram o con el formulario de contacto."
+    },
+    "notFound": {
+      "title": "Página no encontrada — etarq studio"
+    }
+  },
+  "Common": {
+    "skipToContent": "Saltar al contenido",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "menu": "Menú",
+    "mainNavigation": "Navegación principal",
+    "footerNavigation": "Navegación del pie de página",
+    "viewProject": "Ver proyecto",
+    "allProjects": "Todos los proyectos",
+    "backToProjects": "Volver a proyectos",
+    "nextProject": "Siguiente proyecto",
+    "scroll": "Desplázate",
+    "projectCount": "{current} / {total}",
+    "draftNote": "Texto en borrador — pendiente de confirmar con el estudio.",
+    "goHome": "Ir al inicio",
+    "externalLink": "se abre en una pestaña nueva",
+    "homeLink": "etarq studio, ir al inicio",
+    "cursorView": "Ver"
+  },
+  "Nav": {
+    "projects": "Proyectos",
+    "studio": "Estudio",
+    "approach": "Cómo trabajamos",
+    "contact": "Contacto"
+  },
+  "Language": {
+    "label": "Idioma",
+    "es": "ES",
+    "en": "EN",
+    "switchToEs": "ES: cambiar el sitio a español",
+    "switchToEn": "EN: cambiar el sitio a inglés"
+  },
+  "Hero": {
+    "statement": "Materia, espacio y vida cotidiana.",
+    "discipline": "Arquitectura + Diseño",
+    "location": "CDMX · México",
+    "scroll": "Desplázate",
+    "panelsLabel": "Fotografías de proyectos destacados"
+  },
+  "Intro": {
+    "eyebrow": "El estudio",
+    "title": "Espacios que no solo cumplen una función: transmiten sensaciones y cuentan historias.",
+    "body1": "Nuestro nombre proviene del latín, donde “et”, que significa “y”, simboliza la unión entre diversos actores en la arquitectura.",
+    "body2": "Cada proyecto busca integrar a las personas en el acto de habitar, utilizando materiales, texturas, iluminación y mobiliario para construir atmósferas que reflejen su esencia y eleven su estilo de vida.",
+    "cta": "Conoce el estudio"
+  },
+  "Projects": {
+    "eyebrow": "Proyectos",
+    "title": "Obra seleccionada",
+    "lead": "Cafés, bares, restaurantes, salones y viviendas.",
+    "featuredEyebrow": "Selección",
+    "featuredTitle": "Proyectos recientes",
+    "typeLabel": "Tipo",
+    "materialsLabel": "Materiales",
+    "locationLabel": "Ubicación",
+    "yearLabel": "Año",
+    "aboutLabel": "Sobre el proyecto",
+    "indexLabel": "Índice de proyectos",
+    "materialsNote": "Materiales identificados en las fotografías; por confirmar con el estudio.",
+    "draftTitleNote": "Título de trabajo — pendiente de confirmar con el estudio.",
+    "moreImagesNote": "Más fotografías del proyecto se añadirán cuando el estudio las entregue.",
+    "galleryLabel": "Galería del proyecto",
+    "items": {
+      "cafe": {
+        "title": "Café ocre",
+        "type": "Interior de café · render",
+        "summary": "Muros ocre, carpintería de madera y un marco de acero verde claro alrededor de una barra de café compacta.",
+        "description": "Un café compacto donde los muros ocre y una barra de madera cálida se encuentran con un marco de acero verde claro y vidrio translúcido. Lámparas rojas cuelgan sobre la barra y una ventana en arco de azulejo rojo brilla junto a la escalera. Un baño angosto repite la paleta con un espejo ovalado y una puerta verde claro."
+      },
+      "desierto": {
+        "title": "Restaurante desierto",
+        "type": "Interior de restaurante · render",
+        "summary": "Yeso cálido, muros con relieve geométrico y una jardinera de cactus bajo un techo textil escultórico.",
+        "description": "Un comedor construido alrededor de la calidez del desierto: muros de yeso ocre, paneles con relieve geométrico retroiluminados y largas jardineras de cactus. Una vista muestra formas textiles escultóricas flotando bajo un tragaluz; otra, un pasillo pintado de verde con puertas de madera y paneles tejidos."
+      },
+      "billar": {
+        "title": "Salón de billar",
+        "type": "Interior de salón · render",
+        "summary": "Boiserie verde profundo, plafón de madera con casetones y asientos de piel color cognac.",
+        "description": "Un salón en verde profundo: muros con boiserie y cornisa festoneada, plafón de madera con casetones y ventanas en arco con cortinas ligeras. Las mesas de billar conviven con sofás de piel color cognac, mesas laterales de latón y un espejo alto con marco de madera. La segunda vista muestra un rincón con una palma y arbotantes."
+      },
+      "bano": {
+        "title": "Baño de azulejo verde",
+        "type": "Baño · render",
+        "summary": "Azulejo verde vertical, un muro de tabique de vidrio y madera cálida con grifería cobriza.",
+        "description": "Un baño envuelto en azulejo verde brillante colocado en hiladas verticales. Un muro de tabique de vidrio deja pasar la luz hacia la regadera, mientras que el plafón de madera, el mueble flotante y los entrepaños iluminados mantienen la calidez. Un piso de mosaico con patrón y una obra enmarcada completan la composición."
+      },
+      "azotea": {
+        "title": "Departamento con terraza en azotea",
+        "type": "Residencial · fotografías",
+        "summary": "Una terraza en azotea bajo una pérgola de madera, con mobiliario cálido y abundante vegetación.",
+        "description": "Una vivienda en fotografías. Una pérgola de madera con tablillas proyecta sombras con patrón sobre la terraza, donde un sillón de madera integrado convive con jardineras. En el interior, una recámara con cabecera y clósets de madera, y áreas de estar con sofás grises, iluminación de riel y obra gráfica enmarcada."
+      },
+      "cine": {
+        "title": "Bar de cine",
+        "type": "Interior de bar · render",
+        "summary": "Muros dorados, bancas de madera y carteles enmarcados del cine mexicano.",
+        "description": "Un bar angosto iluminado como un set de cine: muros de yeso cálido con lámparas rojas, paneles de espejo y bancas de madera tapizadas en rojo. Carteles enmarcados del cine mexicano recorren los muros, y una barra de madera con bancos de acero verde claro se extiende a lo largo del espacio."
+      },
+      "oficina": {
+        "title": "Oficina en dos niveles",
+        "type": "Espacio de trabajo · render",
+        "summary": "Una oficina con mezzanine, escalera translúcida, estructura de acero verde y repisas abiertas.",
+        "description": "Un espacio de trabajo organizado en dos niveles. Un panel translúcido enmarcado en acero verde envuelve la escalera, repisas abiertas de acero pintado en azul dividen la planta y plataformas de madera alojan los escritorios. Arriba, un mezzanine con barandal de vidrio y acero se asoma a una sala con puffs y plantas."
+      },
+      "terraza": {
+        "title": "Pérgola con jardineras",
+        "type": "Exterior · fotografía",
+        "summary": "Una pérgola de madera y acero con techo translúcido sobre jardineras negras al borde de la calle.",
+        "description": "Un dosel frente a la calle hecho de vigas de madera, delgados postes de acero negro y un techo translúcido. Jardineras de acero negro con arbustos, enredaderas y árboles pequeños forman una pantalla verde entre la banqueta y el interior."
+      },
+      "sala": {
+        "title": "Sala de techo azul",
+        "type": "Interior de sala · render",
+        "summary": "Una retícula de acero azul marino en el techo, asientos terracota y un asiento-ventana de madera.",
+        "description": "Un espacio de estar bajo un plafón de retícula de acero azul oscuro. Sofás terracota y un puf descansan sobre un tapete oval claro, con repisas y gabinetes azules en un muro, una banca de madera junto a la ventana con cojín turquesa y una columna rojo intenso junto a un cancel de acero y vidrio."
+      },
+      "cocina": {
+        "title": "Cocina bajo tragaluz vegetal",
+        "type": "Cocina · render",
+        "summary": "Una isla de madera y piedra bajo un tragaluz de vigas de madera cubiertas de vegetación.",
+        "description": "Una cocina abierta organizada alrededor de una larga isla de madera con una barra de cocción de cubierta de piedra. Encima, vigas de madera enmarcan un tragaluz cubierto de plantas trepadoras y una lámpara colgante cae sobre el extremo del comedor. La carpintería cálida y las superficies claras mantienen la calma del espacio."
+      },
+      "vestidor": {
+        "title": "Vestidor en madera",
+        "type": "Interior · render",
+        "summary": "Carpintería de madera de piso a techo, piso en espiga y un asiento junto a la ventana hacia un jardín.",
+        "description": "Un espacio revestido de carpintería de madera de veta vertical de piso a techo, con iluminación oculta en el borde del plafón. Un piso de madera en espiga conduce a una isla central de madera y a un asiento junto a la ventana, enmarcado por cortinas ligeras y persianas de lamas, con vista a la vegetación."
+      },
+      "fachada": {
+        "title": "Casa de fachada rosa",
+        "type": "Fachada · fotografía",
+        "summary": "Una fachada rosa suave con ventanas de acero negro y un portón revestido de tablones de madera con rica veta.",
+        "description": "Una fachada a la calle en rosa suave, con grandes ventanales de acero negro en dos niveles. A nivel de calle, un portón con marco de acero y revestido de tablones verticales de madera, con marcada veta y variación de color, ancla la composición."
+      }
+    }
+  },
+  "Materials": {
+    "timber": "Madera",
+    "stone": "Piedra",
+    "steel": "Acero",
+    "concrete": "Concreto",
+    "ceramic": "Azulejo vidriado",
+    "plaster": "Aplanado rugoso",
+    "plants": "Vegetación",
+    "translucent": "Paneles translúcidos",
+    "paint": "Color aplicado",
+    "terrazzo": "Terrazo",
+    "canopy": "Dosel translúcido",
+    "textile": "Textil",
+    "leather": "Piel",
+    "brass": "Latón",
+    "glass": "Vidrio"
+  },
+  "Studio": {
+    "eyebrow": "Estudio",
+    "title": "El Estudio",
+    "body1": "Nuestro nombre proviene del latín, donde “et”, que significa “y”, simboliza la unión entre diversos actores en la arquitectura.",
+    "body2": "Con este enfoque, <b>creamos espacios que no solo cumplen una función, sino que transmiten sensaciones y cuentan historias.</b>",
+    "body3": "Cada proyecto busca integrar a las personas en el acto de habitar, <b>utilizando materiales, texturas, iluminación y mobiliario para construir atmósferas que reflejen su esencia y eleven su estilo de vida.</b> Descubre cómo podemos transformar tu visión en una experiencia estética y emocional única.",
+    "projectsCta": "Ver proyectos",
+    "ctaTitle": "¿Tienes un espacio en mente?",
+    "ctaBody": "Cuéntanos sobre el sitio, el programa y lo que imaginas.",
+    "ctaButton": "Escribir al estudio"
+  },
+  "Contact": {
+    "eyebrow": "Contacto",
+    "title": "Hablemos de tu proyecto.",
+    "lead": "Cuéntanos sobre el espacio, el sitio y lo que imaginas.",
+    "detailsTitle": "Contacto directo",
+    "instagram": "Instagram",
+    "instagramCta": "Escríbenos por mensaje directo",
+    "email": "Correo electrónico",
+    "whatsapp": "WhatsApp",
+    "location": "Ubicación",
+    "locationValue": "Ciudad de México, México",
+    "formTitle": "Formulario de consulta",
+    "formIntro": "Este formulario es un prototipo de interfaz. Conéctalo a un servicio de correo para recibir los mensajes."
+  },
+  "Form": {
+    "name": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "tu@correo.com",
+    "projectType": "Tipo de proyecto",
+    "projectTypePlaceholder": "Selecciona una opción",
+    "types": {
+      "residential": "Residencial",
+      "commercial": "Comercial y tiendas",
+      "hospitality": "Hospitalidad (cafés y restaurantes)",
+      "interior": "Interiorismo",
+      "other": "Otro"
+    },
+    "message": "Mensaje",
+    "messagePlaceholder": "Cuéntanos sobre el espacio, el sitio y el momento en que quieres empezar.",
+    "required": "obligatorio",
+    "honeypot": "Déjalo vacío si eres una persona",
+    "submit": "Enviar consulta",
+    "submitting": "Enviando…",
+    "errors": {
+      "summary": "Revisa los campos marcados.",
+      "nameRequired": "Escribe tu nombre.",
+      "emailRequired": "Escribe tu correo electrónico.",
+      "emailInvalid": "Escribe un correo electrónico válido.",
+      "typeRequired": "Selecciona el tipo de proyecto.",
+      "messageRequired": "Escribe tu mensaje.",
+      "messageShort": "Escribe al menos 10 caracteres."
+    },
+    "status": {
+      "prototype": "Este formulario es un prototipo: tu mensaje no se envió. Mientras tanto, escribe al estudio por Instagram.",
+      "success": "Gracias, tu mensaje fue enviado.",
+      "error": "Algo salió mal. Inténtalo de nuevo o escríbenos por Instagram."
+    }
+  },
+  "Footer": {
+    "tagline": "Arquitectura + Diseño",
+    "navigationTitle": "Navegación",
+    "contactTitle": "Contacto",
+    "followTitle": "Síguenos",
+    "rights": "© {year} etarq studio.",
+    "photoCredit": "Renders y fotografías: material proporcionado por el estudio.",
+    "concept": "Propuesta de sitio web."
+  },
+  "Errors": {
+    "title": "Algo salió mal",
+    "body": "No pudimos cargar esta página. Inténtalo de nuevo en un momento.",
+    "retry": "Intentar de nuevo",
+    "notFoundTitle": "Página no encontrada",
+    "notFoundBody": "La página que buscas no existe o cambió de lugar.",
+    "notFoundCode": "Error 404"
+  },
+  "Loading": {
+    "label": "Cargando contenido"
+  },
+  "Images": {
+    "cafe": "Barra de café renderizada con muros de yeso ocre, gabinetes de madera, lámparas colgantes rojas y un marco de acero y vidrio verde claro, junto a una escalera y una ventana en arco de azulejo rojo",
+    "basin": "Baño angosto renderizado con muros ocre, espejo ovalado con marco verde claro, lavabo blanco redondo sobre mueble de madera y puerta verde translúcida",
+    "cine": "Interior de bar renderizado con muros dorados, lámparas rojas, bancas de madera tapizadas en rojo, carteles enmarcados del cine mexicano y una barra de madera con bancos verde claro",
+    "desiertoWide": "Comedor renderizado con un muro de relieve geométrico retroiluminado, yeso ocre, marcos de acero colgantes con lámparas y una jardinera de cactus altos",
+    "desiertoDoor": "Pasillo renderizado pintado de verde con dos puertas de madera con paneles tejidos, una lámpara de muro y un cactus",
+    "desiertoDrape": "Restaurante renderizado con formas textiles escultóricas bajo un tragaluz, un muro con relieve de patrón, jardineras de cactus y un muro de repisas de ladrillo",
+    "billar": "Salón renderizado con muros con boiserie verde profundo, plafón de madera con casetones, mesa de billar, ventanas en arco con cortinas ligeras y sofás de piel color cognac",
+    "billarLounge": "Rincón renderizado en verde profundo con un espejo alto de marco de madera, una palma, un arbotante de latón y un sofá de piel color cognac junto a una mesa con cubierta de mármol",
+    "sala": "Espacio de estar renderizado con plafón de retícula de acero azul marino, sofás terracota, repisas azules, asiento-ventana de madera y una columna rojo intenso",
+    "terraza": "Pérgola frente a la calle con vigas de madera, postes de acero negro y techo translúcido, sobre jardineras negras llenas de arbustos y enredaderas",
+    "oficinaEscalera": "Espacio de trabajo renderizado con un panel translúcido de escalera con marco de acero verde, repisas de acero azul, plataformas de madera y escritorios",
+    "oficinaAlta": "Mezzanine renderizado con escritorios y sillas verdes tras un barandal de vidrio, repisas de madera y una sala con puffs en el nivel inferior",
+    "banoB": "Baño renderizado con azulejo verde vertical, muro de tabique de vidrio, banca de madera, entrepaños de madera iluminados y una obra enmarcada",
+    "banoA": "Regadera renderizada en azulejo verde tras un muro de tabique de vidrio, con plafón de madera y mueble flotante",
+    "cocina": "Cocina abierta renderizada con isla de madera, un tragaluz de vigas de madera cubiertas de plantas y una lámpara colgante",
+    "vestidor": "Espacio renderizado revestido de carpintería de madera vertical, con piso en espiga, isla central de madera y asiento junto a la ventana con cortinas ligeras",
+    "azotea": "Terraza en azotea bajo una pérgola de tablillas de madera, con sillón de madera, jardineras y vista a la ciudad",
+    "recamara": "Recámara con cabecera de madera, ropa de cama blanca, un muro de clósets y repisas de madera",
+    "estarA": "Área de estar con sillones verde olivo, un sofá gris, una chimenea e iluminación de riel",
+    "estarB": "Sala con sofá seccional gris, mesa de centro de madera oscura, obra gráfica enmarcada e iluminación de riel",
+    "fachada": "Fachada rosa con ventanas de acero negro en dos niveles y un portón de tablones verticales de madera",
+    "studioWalk": "Interior en blanco y negro con una figura difuminada caminando frente a un muro de paneles de madera, una lámpara colgante, una columna oscura y ventanales de piso a techo",
+    "team_erick": "Retrato de Erick Téllez",
+    "team_pilar": "Retrato de Pilar Colado",
+    "team_rodrigo": "Retrato de Rodrigo Malo",
+    "team_abril": "Retrato de Abril Esparza",
+    "team_alexia": "Retrato de Alexia Argüelles",
+    "team_fernando": "Retrato de Fernando Dragonné"
+  },
+  "Marquee": {
+    "a": "Materia",
+    "b": "Espacio",
+    "c": "Luz",
+    "d": "Vida cotidiana"
+  },
+  "Showcase": {
+    "title": "Recorre la obra",
+    "hint": "Sigue desplazándote",
+    "trackLabel": "Proyectos en recorrido horizontal"
+  },
+  "Index": {
+    "eyebrow": "Índice",
+    "title": "Todos los proyectos",
+    "hint": "Pasa el cursor sobre un proyecto para ver su vista previa."
+  },
+  "Stats": {
+    "eyebrow": "Experiencia",
+    "area": {
+      "value": "+3,000",
+      "label": "m² diseñados en 2025-26"
+    },
+    "states": {
+      "value": "3",
+      "label": "estados donde hemos trabajado"
+    },
+    "projects": {
+      "value": "+30",
+      "label": "proyectos en 2025-26"
+    },
+    "years": {
+      "value": "+4",
+      "label": "años de experiencia"
+    }
+  },
+  "Team": {
+    "eyebrow": "Las personas",
+    "title": "Equipo",
+    "lead": "Directores y arquitectas detrás de etarq studio.",
+    "roles": {
+      "erick": "Director de Proyectos y Fundador",
+      "pilar": "Directora de Diseño",
+      "rodrigo": "Director de Desarrollo",
+      "abril": "Arquitecta Junior",
+      "alexia": "Arquitecta Junior",
+      "fernando": "Director Comercial"
+    }
+  },
+  "Process": {
+    "eyebrow": "Proceso",
+    "title": "Cómo trabajamos",
+    "lead": "Cuatro etapas llevan un proyecto desde la primera conversación hasta un espacio terminado y bien construido.",
+    "imageNote": "Las fotografías son imágenes ilustrativas de proyectos proporcionadas por el estudio.",
+    "cta": "Conoce cómo trabajamos",
+    "stages": {
+      "s1": {
+        "title": "Inicio de Proyecto",
+        "i1": "Análisis de sitio y contexto.",
+        "i2": "Programa de proyecto.",
+        "i3": "Look & feel.",
+        "i4": "Diseño conceptual."
+      },
+      "s2": {
+        "title": "Diseño Arquitectónico",
+        "i1": "Plantas.",
+        "i2": "Renders.",
+        "i3": "Selección de acabados.",
+        "i4": "Intenciones y pre-soluciones estructurales.",
+        "i5": "Intenciones y pre-soluciones de instalaciones."
+      },
+      "s3": {
+        "title": "Proyecto Ejecutivo",
+        "i1": "Proyecto arquitectónico-constructivo.",
+        "i2": "Planos de ingenierías estructurales, hidrosanitarias y eléctricas.",
+        "i3": "Catálogo de trabajos ejecutivos para la construcción."
+      },
+      "s4": {
+        "title": "Supervisión de Obra",
+        "i1": "Con o sin obra.",
+        "i2": "Garantía de la realización correcta de los trabajos de construcción."
+      }
+    }
+  }
+}

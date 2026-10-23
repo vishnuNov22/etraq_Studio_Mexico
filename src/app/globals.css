@@ -1,0 +1,281 @@
+@import "tailwindcss";
+
+/* Body/UI fallback only. The client typeface (Söhne Extraleicht) is declared below and takes over automatically when installed. */
+@import "@fontsource-variable/dm-sans/index.css";
+
+/*
+ * ---------------------------------------------------------------------------------------------
+ * TYPEFACE — Söhne Extraleicht Regular (Klim Type Foundry, Kris Sowersby, v1.112)
+ * ---------------------------------------------------------------------------------------------
+ * Söhne is a commercial font; the licensed files were not supplied, so they are NOT bundled.
+ * To finish the implementation: drop the licensed woff2 into /public/fonts (see README there)
+ * and uncomment the `url()` line below. Until then the stack uses the visitor's locally installed
+ * Söhne if present, and otherwise DM Sans Light as a visually close, clearly temporary fallback.
+ */
+@font-face {
+  font-family: "Söhne Extraleicht";
+  font-style: normal;
+  font-weight: 100 400;
+  font-display: swap;
+  src: local("Söhne Extraleicht"), local("Söhne-Extraleicht"), local("Soehne-Extraleicht"), local("Söhne Extraleicht Regular");
+  /* src: url("/fonts/Soehne-Extraleicht.woff2") format("woff2"); */
+}
+
+/*
+ * ---------------------------------------------------------------------------------------------
+ * PALETTE — every value below was sampled from the client's own renders and slides.
+ * green   #374931  billiards-lounge wall panelling      green-700 #2f442f / green-300 #5d7e60  bathroom tile
+ * leather #784a20  lounge sofa                          cognac    #885e3a  armchair
+ * ivory   #f4f1ec  slide background                     ink       #2b2a27  slide text
+ * Derived (darker / lighter steps of the sampled hues): green-900, leather-900/800, tan, mists.
+ * ---------------------------------------------------------------------------------------------
+ */
+:root {
+  --c-green-900: #1f2d1f;
+  --c-green-700: #2f442f;
+  --c-green-600: #374931;
+  --c-green-300: #5d7e60;
+  --c-green-100: #dfe6da;
+  --c-leather-900: #2e1b0e;
+  --c-leather-800: #3a2414;
+  --c-leather-600: #784a20;
+  --c-cognac: #885e3a;
+  --c-tan: #d9bb92;
+  --c-cognac-100: #e9dcc7;
+  --c-ivory: #f4f1ec;
+  --c-ink: #2b2a27;
+
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --header-h: 4.25rem;
+}
+
+/* Animatable colour tokens: registering them lets Framer-free CSS cross-fade whole pages. */
+@property --surface   { syntax: "<color>"; inherits: true; initial-value: #f4f1ec; }
+@property --surface-2 { syntax: "<color>"; inherits: true; initial-value: #e9e2d5; }
+@property --ink       { syntax: "<color>"; inherits: true; initial-value: #2b2a27; }
+@property --muted     { syntax: "<color>"; inherits: true; initial-value: #5f5a50; }
+@property --line      { syntax: "<color>"; inherits: true; initial-value: rgb(43 42 39 / 0.16); }
+@property --accent    { syntax: "<color>"; inherits: true; initial-value: #374931; }
+@property --accent-ink{ syntax: "<color>"; inherits: true; initial-value: #f4f1ec; }
+
+/* ---------- Themes (page-level via data-theme, section-level via .tone-*) ---------- */
+[data-theme="ivory"], .tone-ivory {
+  --surface: #f4f1ec; --surface-2: #e9e2d5; --ink: #2b2a27; --muted: #5f5a50;
+  --line: rgb(43 42 39 / 0.16); --accent: #374931; --accent-ink: #f4f1ec;
+}
+[data-theme="green"], .tone-green {
+  --surface: #2f442f; --surface-2: #374931; --ink: #f4f1ec; --muted: #c5cfc0;
+  --line: rgb(244 241 236 / 0.24); --accent: #d9bb92; --accent-ink: #1f2d1f;
+}
+[data-theme="leather"], .tone-leather {
+  --surface: #3a2414; --surface-2: #4a2e19; --ink: #f4ece0; --muted: #d3bea6;
+  --line: rgb(244 236 224 / 0.22); --accent: #d9bb92; --accent-ink: #2e1b0e;
+}
+[data-theme="cognac"], .tone-cognac {
+  --surface: #e9dcc7; --surface-2: #dccbb0; --ink: #2e1b0e; --muted: #6b5236;
+  --line: rgb(46 27 14 / 0.2); --accent: #784a20; --accent-ink: #f4f1ec;
+}
+[data-theme="sage"], .tone-sage {
+  --surface: #dfe6da; --surface-2: #cfd9c9; --ink: #1f2d1f; --muted: #46583f;
+  --line: rgb(31 45 31 / 0.2); --accent: #374931; --accent-ink: #f4f1ec;
+}
+.tone-ivory, .tone-green, .tone-leather, .tone-cognac, .tone-sage {
+  background-color: var(--surface);
+  color: var(--ink);
+}
+
+/* The shell carries the page theme and cross-fades every token on route change. */
+.theme-shell {
+  background-color: var(--surface);
+  color: var(--ink);
+  min-height: 100svh;
+  transition:
+    --surface 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    --surface-2 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    --ink 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    --muted 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    --line 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    --accent 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    --accent-ink 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@theme inline {
+  /* Themed tokens: follow the active page / section palette. */
+  --color-surface: var(--surface);
+  --color-limestone: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-rojo: var(--accent);        /* legacy name; this is now the themed accent */
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  /* Static brand colours. */
+  --color-ivory: #f4f1ec;
+  --color-charcoal: #1f2d1f;
+  --color-moss: #374931;
+  --color-oak: #885e3a;
+  --color-saddle: #784a20;
+  --color-tan: #d9bb92;
+  --font-sans: "Söhne Extraleicht", "Söhne", "DM Sans Variable", "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-serif: var(--font-sans);
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  background: var(--c-green-900);
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+strong, b { font-weight: 500; }
+
+/* Hyphenation follows <html lang>, which keeps long Spanish words from breaking the layout. */
+h1, h2, h3, p, li, dd, label {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+
+::selection { background: var(--accent); color: var(--accent-ink); }
+
+/* Accessible, visible focus everywhere (accent adapts to the section palette). */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.on-dark :focus-visible { outline-color: var(--color-tan); }
+
+/* ---------- Typographic utilities ---------- */
+.font-display {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+.display-xl { font-size: clamp(3rem, 9vw, 9rem); }
+.display-lg { font-size: clamp(2.25rem, 5.6vw, 5.5rem); }
+.display-md { font-size: clamp(1.875rem, 3.8vw, 3.5rem); line-height: 1.06; }
+.display-sm { font-size: clamp(1.5rem, 2.4vw, 2.25rem); line-height: 1.12; letter-spacing: -0.025em; }
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.rule { border-top: 1px solid var(--line); }
+
+.container-x {
+  width: 100%;
+  max-width: 96rem;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* Underline-on-hover link used across the site. */
+.link-line {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s var(--ease-editorial);
+}
+.link-line:hover { background-size: 0% 1px; background-position: 100% 100%; }
+
+/* Photograph hover: slow, controlled zoom (images keep their own crop). */
+.photo-zoom img { transition: transform 1.2s var(--ease-editorial); }
+@media (hover: hover) {
+  .photo-zoom:hover img { transform: scale(1.035); }
+}
+
+/* No-JS / reduced-motion safety: content is never left hidden. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  [data-reveal] { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+}
+
+/* Without JavaScript nothing may stay hidden by a reveal animation. */
+@media (scripting: none) {
+  [data-reveal] { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+}
+
+/* Skip link */
+.skip-link {
+  position: fixed;
+  left: var(--gutter);
+  top: 0.75rem;
+  z-index: 100;
+  padding: 0.65rem 1rem;
+  background: var(--color-charcoal);
+  color: var(--color-ivory);
+  font-size: 0.875rem;
+  transform: translateY(-200%);
+  transition: transform 0.25s var(--ease-editorial);
+}
+.skip-link:focus { transform: translateY(0); }
+
+@keyframes scroll-cue {
+  0% { transform: scaleY(0); transform-origin: top; }
+  45% { transform: scaleY(1); transform-origin: top; }
+  55% { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+.scroll-cue { animation: scroll-cue 2.4s var(--ease-editorial) infinite; }
+
+@keyframes bar-slide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(250%); }
+}
+.loading-bar { animation: bar-slide 1.4s var(--ease-editorial) infinite; }
+
+/* ---------- Advanced UI layer ---------- */
+
+/* Film-grain overlay for dark sections: adds tactility and makes photography feel printed. */
+.grain { position: relative; isolation: isolate; }
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.07;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Outlined display type for the marquee. */
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 1px currentColor;
+}
+
+/* Marquee: two identical groups, translated by exactly one group width. */
+@keyframes marquee { to { transform: translateX(-50%); } }
+.marquee-track { animation: marquee 48s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none !important; } }
+
+/* Blueprint hairlines used as architectural decoration. */
+.hairline-grid {
+  background-image: linear-gradient(to right, rgb(243 239 231 / 0.07) 1px, transparent 1px);
+  background-size: calc(100% / 6) 100%;
+}

@@ -1,0 +1,376 @@
+{
+  "Meta": {
+    "siteName": "etarq studio",
+    "ogImageAlt": "Rendered café counter in ochre plaster with timber cabinets, red pendant lamps and a pale-green steel and glass frame, beside a stair and an arched red-tile window",
+    "home": {
+      "title": "etarq studio — Architecture + Design in Mexico City",
+      "description": "Matter, space and everyday life. etarq studio is an architecture and design practice based in Mexico City: spaces that convey feeling and tell stories."
+    },
+    "projects": {
+      "title": "Projects — etarq studio",
+      "description": "Cafés, bars, restaurants, lounges and homes: a selection of projects by etarq studio."
+    },
+    "studio": {
+      "title": "Studio — etarq studio",
+      "description": "etarq studio: the union of many people in architecture. Meet the studio, its figures and its team."
+    },
+    "approach": {
+      "title": "How we work — etarq studio",
+      "description": "Four stages from project kickoff to site supervision: how etarq studio works."
+    },
+    "contact": {
+      "title": "Contact — etarq studio",
+      "description": "Tell us about your project. Reach etarq studio on Instagram or through the contact form."
+    },
+    "notFound": {
+      "title": "Page not found — etarq studio"
+    }
+  },
+  "Common": {
+    "skipToContent": "Skip to content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": "Menu",
+    "mainNavigation": "Main navigation",
+    "footerNavigation": "Footer navigation",
+    "viewProject": "View project",
+    "allProjects": "All projects",
+    "backToProjects": "Back to projects",
+    "nextProject": "Next project",
+    "scroll": "Scroll",
+    "projectCount": "{current} / {total}",
+    "draftNote": "Draft copy — to be confirmed with the studio.",
+    "goHome": "Go to the homepage",
+    "externalLink": "opens in a new tab",
+    "homeLink": "etarq studio, go to the homepage",
+    "cursorView": "View"
+  },
+  "Nav": {
+    "projects": "Projects",
+    "studio": "Studio",
+    "approach": "Process",
+    "contact": "Contact"
+  },
+  "Language": {
+    "label": "Language",
+    "es": "ES",
+    "en": "EN",
+    "switchToEs": "ES: switch the site to Spanish",
+    "switchToEn": "EN: switch the site to English"
+  },
+  "Hero": {
+    "statement": "Matter, space and everyday life.",
+    "discipline": "Architecture + Design",
+    "location": "CDMX · Mexico",
+    "scroll": "Scroll",
+    "panelsLabel": "Photographs of featured projects"
+  },
+  "Intro": {
+    "eyebrow": "The studio",
+    "title": "Spaces that do more than work: they convey feeling and tell stories.",
+    "body1": "Our name comes from Latin, where “et” means “and”. It stands for the union of the many different actors in architecture.",
+    "body2": "Each project brings people into the act of inhabiting, using materials, textures, lighting and furniture to build atmospheres that reflect who they are and elevate their way of life.",
+    "cta": "Meet the studio"
+  },
+  "Projects": {
+    "eyebrow": "Projects",
+    "title": "Selected work",
+    "lead": "Cafés, bars, restaurants, lounges and homes.",
+    "featuredEyebrow": "Selection",
+    "featuredTitle": "Recent projects",
+    "typeLabel": "Type",
+    "materialsLabel": "Materials",
+    "locationLabel": "Location",
+    "yearLabel": "Year",
+    "aboutLabel": "About the project",
+    "indexLabel": "Project index",
+    "materialsNote": "Materials identified from the photographs; to be confirmed with the studio.",
+    "draftTitleNote": "Working title — to be confirmed with the studio.",
+    "moreImagesNote": "More photographs of this project will be added once the studio supplies them.",
+    "galleryLabel": "Project gallery",
+    "items": {
+      "cafe": {
+        "title": "Ochre café",
+        "type": "Café interior · render",
+        "summary": "Ochre plaster, timber joinery and a pale-green steel frame around a compact coffee counter.",
+        "description": "A compact café where ochre-toned walls and a warm timber counter meet a pale-green steel frame with translucent glass. Red pendant lamps hang over the counter, and an arched window of red tile glows beside the stair. A narrow washroom repeats the palette with an oval mirror and a pale-green door."
+      },
+      "desierto": {
+        "title": "Desert restaurant",
+        "type": "Restaurant interior · render",
+        "summary": "Warm plaster, geometric relief walls and a planter of cacti beneath a sculpted textile ceiling.",
+        "description": "A dining room built around desert warmth: ochre plaster walls, backlit geometric relief panels and long planters of cacti. One view shows sculpted textile forms drifting beneath a skylight; another shows a green-painted passage with timber doors and woven panels."
+      },
+      "billar": {
+        "title": "Billiards lounge",
+        "type": "Lounge interior · render",
+        "summary": "Deep green panelling, a coffered timber ceiling and cognac leather seating.",
+        "description": "A lounge in deep green: panelled walls with a scalloped cornice, a coffered timber ceiling and arched windows with sheer curtains. Billiard tables sit beside cognac leather sofas, brass side tables and a tall timber-framed mirror. The second view looks into a corner with a palm and wall sconces."
+      },
+      "bano": {
+        "title": "Green-tile bathroom",
+        "type": "Bathroom · render",
+        "summary": "Vertical green tile, a glass-block partition and warm timber with copper-toned fittings.",
+        "description": "A bathroom wrapped in glossy green tile laid in vertical stacks. A glass-block partition lets light reach the shower, while a timber ceiling, a floating vanity and illuminated shelves keep the room warm. A patterned tile floor and a framed artwork complete the composition."
+      },
+      "azotea": {
+        "title": "Apartment with roof terrace",
+        "type": "Residential · photographs",
+        "summary": "A roof terrace under a timber pergola, with warm timber furniture and generous planting.",
+        "description": "A residence in photographs. A slatted timber pergola throws patterned shade across the roof terrace, where a built-in timber sofa sits among planters. Inside, a bedroom with a timber headboard and wardrobes, and living areas with grey sofas, track lighting and framed prints."
+      },
+      "cine": {
+        "title": "Cinema bar",
+        "type": "Bar interior · render",
+        "summary": "Golden plaster, timber booths and framed Mexican cinema posters.",
+        "description": "A narrow bar lit like a film set: warm plaster walls with red wall lights, mirrored panels and timber booths upholstered in red. Framed Mexican cinema posters line the walls, and a timber counter with pale-green steel stools runs the length of the room."
+      },
+      "oficina": {
+        "title": "Two-level studio",
+        "type": "Workspace · render",
+        "summary": "A mezzanine office with a translucent stair, green steel framing and open shelving.",
+        "description": "A workspace organised on two levels. A translucent panel framed in green steel wraps the stair, open shelving in blue-painted steel divides the floor, and timber platforms hold the desks. Upstairs, a mezzanine with a glass-and-steel balustrade overlooks a lounge with bean bags and plants."
+      },
+      "terraza": {
+        "title": "Planted street canopy",
+        "type": "Exterior · photograph",
+        "summary": "A timber-and-steel pergola with a translucent roof above black planters at the street edge.",
+        "description": "A street-front canopy made of timber beams, slim black steel posts and a translucent roof. Black steel planters filled with shrubs, climbers and small trees form a green screen between the pavement and the interior behind it."
+      },
+      "sala": {
+        "title": "Blue-ceiling lounge",
+        "type": "Lounge interior · render",
+        "summary": "A navy steel ceiling grid, terracotta seating and a timber window seat.",
+        "description": "A living space under a dark-blue steel grid ceiling. Terracotta sofas and a pouf sit on a pale oval rug, with blue shelving and cabinetry along one wall, a timber window bench with a teal cushion, and a deep-red column beside a glazed steel partition."
+      },
+      "cocina": {
+        "title": "Kitchen under a planted skylight",
+        "type": "Kitchen · render",
+        "summary": "A timber-and-stone island beneath a skylight of timber beams draped with plants.",
+        "description": "An open kitchen organised around a long timber island with a stone-topped cooking counter. Above it, timber beams frame a skylight draped in climbing plants, and a pendant lamp hangs over the dining end. Warm timber cabinetry and pale surfaces keep the space calm."
+      },
+      "vestidor": {
+        "title": "Timber dressing room",
+        "type": "Interior · render",
+        "summary": "Floor-to-ceiling timber joinery, a herringbone floor and a window seat facing a garden.",
+        "description": "A room clad in vertical-grain timber joinery from floor to ceiling, with concealed lighting along the ceiling edge. A herringbone timber floor leads to a central timber island and a window seat framed by sheer curtains and slatted blinds, looking onto greenery."
+      },
+      "fachada": {
+        "title": "House with a pink façade",
+        "type": "Façade · photograph",
+        "summary": "A soft-pink façade with black steel windows and a gate clad in richly grained timber planks.",
+        "description": "A street façade in soft pink with large black steel-framed windows across two storeys. At street level, a steel-framed gate clad in vertical timber planks with strong grain and colour variation anchors the composition."
+      }
+    }
+  },
+  "Materials": {
+    "timber": "Timber",
+    "stone": "Stone",
+    "steel": "Steel",
+    "concrete": "Concrete",
+    "ceramic": "Glazed tile",
+    "plaster": "Rough plaster",
+    "plants": "Planting",
+    "translucent": "Translucent panels",
+    "paint": "Applied colour",
+    "terrazzo": "Terrazzo",
+    "canopy": "Translucent canopy",
+    "textile": "Textile",
+    "leather": "Leather",
+    "brass": "Brass",
+    "glass": "Glass"
+  },
+  "Studio": {
+    "eyebrow": "Studio",
+    "title": "The Studio",
+    "body1": "Our name comes from Latin, where “et” means “and”. It stands for the union of the many different actors in architecture.",
+    "body2": "With this approach, <b>we create spaces that do more than work: they convey feeling and tell stories.</b>",
+    "body3": "Each project brings people into the act of inhabiting, <b>using materials, textures, lighting and furniture to build atmospheres that reflect who they are and elevate their way of life.</b> Discover how we can turn your vision into a unique aesthetic and emotional experience.",
+    "projectsCta": "See the projects",
+    "ctaTitle": "Have a space in mind?",
+    "ctaBody": "Tell us about the site, the brief and what you imagine.",
+    "ctaButton": "Write to the studio"
+  },
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Let's talk about your project.",
+    "lead": "Tell us about the space, the site and what you imagine.",
+    "detailsTitle": "Direct contact",
+    "instagram": "Instagram",
+    "instagramCta": "Send us a direct message",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "location": "Location",
+    "locationValue": "Mexico City, Mexico",
+    "formTitle": "Inquiry form",
+    "formIntro": "This form is an interface prototype. Connect it to an email service to receive messages."
+  },
+  "Form": {
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "projectType": "Project type",
+    "projectTypePlaceholder": "Select an option",
+    "types": {
+      "residential": "Residential",
+      "commercial": "Commercial and retail",
+      "hospitality": "Hospitality (cafés and restaurants)",
+      "interior": "Interiors",
+      "other": "Other"
+    },
+    "message": "Message",
+    "messagePlaceholder": "Tell us about the space, the site and when you would like to start.",
+    "required": "required",
+    "honeypot": "Leave this empty if you are a person",
+    "submit": "Send inquiry",
+    "submitting": "Sending…",
+    "errors": {
+      "summary": "Please review the highlighted fields.",
+      "nameRequired": "Please enter your name.",
+      "emailRequired": "Please enter your email.",
+      "emailInvalid": "Please enter a valid email address.",
+      "typeRequired": "Please select a project type.",
+      "messageRequired": "Please write your message.",
+      "messageShort": "Please write at least 10 characters."
+    },
+    "status": {
+      "prototype": "This form is a front-end prototype: your message was not sent. In the meantime, reach the studio on Instagram.",
+      "success": "Thank you, your message has been sent.",
+      "error": "Something went wrong. Please try again or contact us on Instagram."
+    }
+  },
+  "Footer": {
+    "tagline": "Architecture + Design",
+    "navigationTitle": "Navigation",
+    "contactTitle": "Contact",
+    "followTitle": "Follow",
+    "rights": "© {year} etarq studio.",
+    "photoCredit": "Renders and photographs: material supplied by the studio.",
+    "concept": "Website concept."
+  },
+  "Errors": {
+    "title": "Something went wrong",
+    "body": "We could not load this page. Please try again in a moment.",
+    "retry": "Try again",
+    "notFoundTitle": "Page not found",
+    "notFoundBody": "The page you are looking for does not exist or has moved.",
+    "notFoundCode": "Error 404"
+  },
+  "Loading": {
+    "label": "Loading content"
+  },
+  "Images": {
+    "cafe": "Rendered café counter in ochre plaster with timber cabinets, red pendant lamps and a pale-green steel and glass frame, beside a stair and an arched red-tile window",
+    "basin": "Narrow rendered washroom with ochre walls, an oval mirror with a pale-green frame, a round white basin on a timber vanity and a translucent green door",
+    "cine": "Rendered bar interior with golden walls, red wall lights, red-upholstered timber booths, framed Mexican cinema posters and a timber counter with pale-green stools",
+    "desiertoWide": "Rendered dining area with a backlit geometric relief wall, ochre plaster, hanging steel frames with lamps, and a planter of tall cacti",
+    "desiertoDoor": "Rendered green-painted passage with two timber doors with woven panels, a wall light and a cactus",
+    "desiertoDrape": "Rendered restaurant with sculpted textile forms beneath a skylight, a patterned relief wall, planters of cacti and a brick shelving wall",
+    "billar": "Rendered lounge with deep green panelled walls, a coffered timber ceiling, a billiard table, arched windows with sheer curtains and cognac leather sofas",
+    "billarLounge": "Rendered corner in deep green with a tall timber-framed mirror, a palm, a brass wall sconce and a cognac leather sofa beside a marble-topped table",
+    "sala": "Rendered living space with a navy steel grid ceiling, terracotta sofas, blue shelving, a timber window seat and a deep-red column",
+    "terraza": "Street-front pergola of timber beams and black steel posts with a translucent roof, above black planters full of shrubs and climbers",
+    "oficinaEscalera": "Rendered workspace with a translucent stair panel in green steel framing, blue steel shelving, timber platforms and desks",
+    "oficinaAlta": "Rendered mezzanine with desks and green chairs behind a glass balustrade, timber shelving, and a lounge with bean bags below",
+    "banoB": "Rendered bathroom with vertical green tile, a glass-block partition, a timber bench, illuminated timber shelves and a framed artwork",
+    "banoA": "Rendered shower in green tile behind a glass-block wall, with a timber ceiling and a floating vanity",
+    "cocina": "Rendered open kitchen with a timber island, a skylight of timber beams draped with plants and a pendant lamp",
+    "vestidor": "Rendered room clad in vertical timber joinery with a herringbone floor, a central timber island and a window seat with sheer curtains",
+    "azotea": "Roof terrace under a slatted timber pergola with a timber sofa, planters and a view of the city",
+    "recamara": "Bedroom with a timber headboard, white bedding, a wardrobe wall and timber shelving",
+    "estarA": "Living area with olive armchairs, a grey sofa, a fireplace and track lighting",
+    "estarB": "Living room with a grey sectional, a dark-timber coffee table, framed prints and track lighting",
+    "fachada": "Pink house façade with black steel windows on two storeys and a gate of vertical timber planks",
+    "studioWalk": "Black-and-white interior with a blurred figure walking past a timber-panelled wall, a pendant lamp, a dark column and floor-to-ceiling glazing",
+    "team_erick": "Portrait of Erick Téllez",
+    "team_pilar": "Portrait of Pilar Colado",
+    "team_rodrigo": "Portrait of Rodrigo Malo",
+    "team_abril": "Portrait of Abril Esparza",
+    "team_alexia": "Portrait of Alexia Argüelles",
+    "team_fernando": "Portrait of Fernando Dragonné"
+  },
+  "Marquee": {
+    "a": "Matter",
+    "b": "Space",
+    "c": "Light",
+    "d": "Everyday life"
+  },
+  "Showcase": {
+    "title": "Walk through the work",
+    "hint": "Keep scrolling",
+    "trackLabel": "Projects in a horizontal walk-through"
+  },
+  "Index": {
+    "eyebrow": "Index",
+    "title": "Every project",
+    "hint": "Hover a project to preview it."
+  },
+  "Stats": {
+    "eyebrow": "Experience",
+    "area": {
+      "value": "+3,000",
+      "label": "m² designed in 2025–26"
+    },
+    "states": {
+      "value": "3",
+      "label": "states where we have worked"
+    },
+    "projects": {
+      "value": "+30",
+      "label": "projects in 2025–26"
+    },
+    "years": {
+      "value": "+4",
+      "label": "years of experience"
+    }
+  },
+  "Team": {
+    "eyebrow": "The people",
+    "title": "Team",
+    "lead": "The directors and architects behind etarq studio.",
+    "roles": {
+      "erick": "Projects Director & Founder",
+      "pilar": "Design Director",
+      "rodrigo": "Development Director",
+      "abril": "Junior Architect",
+      "alexia": "Junior Architect",
+      "fernando": "Commercial Director"
+    }
+  },
+  "Process": {
+    "eyebrow": "Process",
+    "title": "How we work",
+    "lead": "Four stages take a project from the first conversation to a finished, well-built space.",
+    "imageNote": "Photographs are illustrative project images supplied by the studio.",
+    "cta": "See how we work",
+    "stages": {
+      "s1": {
+        "title": "Project kickoff",
+        "i1": "Site and context analysis.",
+        "i2": "Project brief.",
+        "i3": "Look & feel.",
+        "i4": "Conceptual design."
+      },
+      "s2": {
+        "title": "Architectural design",
+        "i1": "Floor plans.",
+        "i2": "Renders.",
+        "i3": "Finish selection.",
+        "i4": "Structural intentions and pre-solutions.",
+        "i5": "Building-services intentions and pre-solutions."
+      },
+      "s3": {
+        "title": "Executive project",
+        "i1": "Architectural and construction project.",
+        "i2": "Structural, plumbing and electrical engineering drawings.",
+        "i3": "Catalogue of executive drawings for construction."
+      },
+      "s4": {
+        "title": "Site supervision",
+        "i1": "With or without construction work.",
+        "i2": "Assurance that the construction work is carried out correctly."
+      }
+    }
+  }
+}
