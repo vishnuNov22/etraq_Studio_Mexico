@@ -2,12 +2,10 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Locale } from '@/i18n/routing';
 import { pageMetadata } from '@/lib/metadata';
-import { projects } from '@/data/projects';
-import { ProjectFeature } from '@/components/projects/ProjectFeature';
+import { ProjectsGrid } from '@/components/projects/ProjectsGrid';
 import { Reveal } from '@/components/motion/Reveal';
 import { SplitHeading } from '@/components/motion/SplitHeading';
 import { CtaBand } from '@/components/sections/CtaBand';
-import { ProjectIndex } from '@/components/sections/ProjectIndex';
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -33,20 +31,7 @@ export default async function ProjectsPage({ params }: Props) {
         </Reveal>
       </section>
 
-      <ProjectIndex showHeading={false} />
-
-      <section aria-label={t('galleryLabel')}>
-        {projects.map((project, i) => (
-          // Each project sits on a band in its own palette, derived from its materials.
-          <div key={project.slug} className={`tone-${project.theme} py-16 md:py-28`}>
-            <ProjectFeature
-              project={project}
-              // Alternate rhythm across the full index regardless of home-page layouts.
-              layout={project.layout === 'full' ? 'full' : i % 2 === 0 ? 'portraitLeft' : 'wide'}
-            />
-          </div>
-        ))}
-      </section>
+      <ProjectsGrid />
 
       <CtaBand />
     </>

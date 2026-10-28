@@ -24,18 +24,16 @@
 /*
  * ---------------------------------------------------------------------------------------------
  * PALETTE — every value below was sampled from the client's own renders and slides.
- * green   #374931  billiards-lounge wall panelling      green-700 #2f442f / green-300 #5d7e60  bathroom tile
  * leather #784a20  lounge sofa                          cognac    #885e3a  armchair
  * ivory   #f4f1ec  slide background                     ink       #2b2a27  slide text
- * Derived (darker / lighter steps of the sampled hues): green-900, leather-900/800, tan, mists.
+ * Derived: leather-900/800, tan. Green was retired (client feedback, Oct 2026) in favour of neutral ink / stone.
  * ---------------------------------------------------------------------------------------------
  */
 :root {
-  --c-green-900: #1f2d1f;
-  --c-green-700: #2f442f;
-  --c-green-600: #374931;
-  --c-green-300: #5d7e60;
-  --c-green-100: #dfe6da;
+  --c-ink-900: #161615;
+  --c-ink-700: #1f1f1e;
+  --c-stone-100: #e8e6e1;
+  --c-stone-200: #dcd9d2;
   --c-leather-900: #2e1b0e;
   --c-leather-800: #3a2414;
   --c-leather-600: #784a20;
@@ -55,17 +53,18 @@
 @property --ink       { syntax: "<color>"; inherits: true; initial-value: #2b2a27; }
 @property --muted     { syntax: "<color>"; inherits: true; initial-value: #5f5a50; }
 @property --line      { syntax: "<color>"; inherits: true; initial-value: rgb(43 42 39 / 0.16); }
-@property --accent    { syntax: "<color>"; inherits: true; initial-value: #374931; }
+@property --accent    { syntax: "<color>"; inherits: true; initial-value: #1a1a19; }
 @property --accent-ink{ syntax: "<color>"; inherits: true; initial-value: #f4f1ec; }
 
 /* ---------- Themes (page-level via data-theme, section-level via .tone-*) ---------- */
 [data-theme="ivory"], .tone-ivory {
   --surface: #f4f1ec; --surface-2: #e9e2d5; --ink: #2b2a27; --muted: #5f5a50;
-  --line: rgb(43 42 39 / 0.16); --accent: #374931; --accent-ink: #f4f1ec;
+  --line: rgb(43 42 39 / 0.16); --accent: #1a1a19; --accent-ink: #f4f1ec;
 }
-[data-theme="green"], .tone-green {
-  --surface: #2f442f; --surface-2: #374931; --ink: #f4f1ec; --muted: #c5cfc0;
-  --line: rgb(244 241 236 / 0.24); --accent: #d9bb92; --accent-ink: #1f2d1f;
+/* Neutral near-black (replaces the former green). */
+[data-theme="ink"], .tone-ink {
+  --surface: #161615; --surface-2: #1f1f1e; --ink: #f4f1ec; --muted: #bdb9b0;
+  --line: rgb(244 241 236 / 0.22); --accent: #d9bb92; --accent-ink: #161615;
 }
 [data-theme="leather"], .tone-leather {
   --surface: #3a2414; --surface-2: #4a2e19; --ink: #f4ece0; --muted: #d3bea6;
@@ -75,11 +74,12 @@
   --surface: #e9dcc7; --surface-2: #dccbb0; --ink: #2e1b0e; --muted: #6b5236;
   --line: rgb(46 27 14 / 0.2); --accent: #784a20; --accent-ink: #f4f1ec;
 }
-[data-theme="sage"], .tone-sage {
-  --surface: #dfe6da; --surface-2: #cfd9c9; --ink: #1f2d1f; --muted: #46583f;
-  --line: rgb(31 45 31 / 0.2); --accent: #374931; --accent-ink: #f4f1ec;
+/* Soft warm grey (replaces the former sage). */
+[data-theme="stone"], .tone-stone {
+  --surface: #e8e6e1; --surface-2: #dcd9d2; --ink: #1a1a19; --muted: #57544d;
+  --line: rgb(26 26 25 / 0.18); --accent: #1a1a19; --accent-ink: #f4f1ec;
 }
-.tone-ivory, .tone-green, .tone-leather, .tone-cognac, .tone-sage {
+.tone-ivory, .tone-ink, .tone-leather, .tone-cognac, .tone-stone {
   background-color: var(--surface);
   color: var(--ink);
 }
@@ -111,8 +111,8 @@
   --color-accent-ink: var(--accent-ink);
   /* Static brand colours. */
   --color-ivory: #f4f1ec;
-  --color-charcoal: #1f2d1f;
-  --color-moss: #374931;
+  --color-charcoal: #161615;
+  --color-moss: #1f1f1e;
   --color-oak: #885e3a;
   --color-saddle: #784a20;
   --color-tan: #d9bb92;
@@ -124,7 +124,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
-  background: var(--c-green-900);
+  background: var(--c-ink-900);
 }
 
 body {

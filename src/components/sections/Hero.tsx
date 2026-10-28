@@ -36,6 +36,7 @@ function HeroPanel({
   panel,
   index,
   progress,
+  filter,
   active,
   reduce,
   onActivate,
@@ -43,6 +44,8 @@ function HeroPanel({
   panel: Panel;
   index: number;
   progress: MotionValue<number>;
+  /** CSS filter string driven by scroll: black & white at the top, full colour once scrolled. */
+  filter: MotionValue<string> | string;
   active: number | null;
   reduce: boolean;
   onActivate: () => void;
@@ -70,7 +73,7 @@ function HeroPanel({
         animate={{ clipPath: 'inset(0% 0 0 0)' }}
         transition={{ duration: 1.5, delay: 0.15 + index * 0.16, ease: EASE }}
       >
-        <motion.div className="absolute inset-x-0 -top-[6%] h-[112%]" style={{ y }}>
+        <motion.div className="absolute inset-x-0 -top-[6%] h-[112%]" style={{ y, filter }}>
           <Image
             src={asset.src}
             alt={ti(panel.asset)}
@@ -107,27 +110,31 @@ function HeroPanel({
 
 /**
  * Cinematic opening: a triptych of project photographs that expand on hover, with staggered clip-path
- * reveals, per-panel parallax and the studio wordmark in oversized light type.
+ * reveals and the studio wordmark in oversized light type. The photographs start in black & white and
+ * turn to colour as the visitor scrolls (client feedback, Oct 2026).
  */
 export function Hero() {
   const t = useTranslations('Hero');
   const reduce = useReducedMotion() ?? false;
   const ref = useRef<HTMLElement>(null);
   const [active, setActive] = useState<number | null>(null);
-  const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] });
+  // The hero is pinned (sticky) inside a taller wrapper: while the visitor scrolls through the extra
+  // height, the photographs turn from black & white to full colour.
+  const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end end'] });
+  const gray = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
+  const scrollFilter = useTransform(gray, (v) => `grayscale(${v.toFixed(3)})`);
+  const filter = reduce ? 'grayscale(0)' : scrollFilter;
 
   return (
-    <section
-      ref={ref}
-      className="on-dark grain relative flex h-[100svh] min-h-[680px] flex-col justify-end overflow-hidden bg-charcoal text-ivory"
-    >
+    <section ref={ref} className={`relative ${reduce ? '' : 'h-[185svh]'}`}>
+    <div className="on-dark grain sticky top-0 flex h-[100svh] min-h-[680px] flex-col justify-end overflow-hidden bg-charcoal text-ivory">
       <ul
         aria-label={t('panelsLabel')}
         className="absolute inset-0 flex gap-1.5 md:gap-2"
         onMouseLeave={() => setActive(null)}
       >
         {PANELS.map((panel, i) => (
-          <HeroPanel key={panel.slug} panel={panel} index={i} progress={scrollYProgress} active={active} reduce={reduce} onActivate={() => setActive(i)} />
+          <HeroPanel key={panel.slug} panel={panel} index={i} progress={scrollYProgress} filter={filter} active={active} reduce={reduce} onActivate={() => setActive(i)} />
         ))}
       </ul>
 
@@ -192,6 +199,7 @@ export function Hero() {
           {t('scroll')}
         </motion.a>
       </div>
+    </div>
     </section>
   );
 }

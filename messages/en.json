@@ -161,7 +161,15 @@
         "summary": "A soft-pink façade with black steel windows and a gate clad in richly grained timber planks.",
         "description": "A street façade in soft pink with large black steel-framed windows across two storeys. At street level, a steel-framed gate clad in vertical timber planks with strong grain and colour variation anchors the composition."
       }
-    }
+    },
+    "filterLabel": "Filter projects by category",
+    "categories": {
+      "all": "All",
+      "hospitality": "Hospitality",
+      "residential": "Residential",
+      "commercial": "Commercial"
+    },
+    "noResults": "No projects in this category yet."
   },
   "Materials": {
     "timber": "Timber",

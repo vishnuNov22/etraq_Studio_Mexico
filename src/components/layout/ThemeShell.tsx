@@ -1,20 +1,14 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useParams } from 'next/navigation';
 import { usePathname } from '@/i18n/navigation';
-import { getProject } from '@/data/projects';
 import { THEME_META_COLOR, type ThemeName } from '@/config/themes';
 
 /** Route → palette. Projects take the palette of their own materials. */
-export function themeFor(pathname: string, slug?: string): ThemeName {
-  if (pathname.startsWith('/projects/')) {
-    const s = slug ?? pathname.split('/')[2];
-    return getProject(s ?? '')?.theme ?? 'ivory';
-  }
-  if (pathname.startsWith('/studio')) return 'sage';
+export function themeFor(pathname: string): ThemeName {
+  if (pathname.startsWith('/studio')) return 'stone';
   if (pathname.startsWith('/approach')) return 'leather';
-  if (pathname.startsWith('/contact')) return 'green';
+  if (pathname.startsWith('/contact')) return 'stone';
   return 'ivory';
 }
 
@@ -25,8 +19,7 @@ export function themeFor(pathname: string, slug?: string): ThemeName {
  */
 export function ThemeShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const params = useParams<{ slug?: string }>();
-  const theme = themeFor(pathname, params?.slug);
+  const theme = themeFor(pathname);
 
   useEffect(() => {
     let meta = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');

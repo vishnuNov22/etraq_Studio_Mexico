@@ -12,7 +12,7 @@ import { MobileMenu } from './MobileMenu';
 
 /**
  * Fixed header. Over the cinematic hero (home, not yet scrolled) it is transparent with light text;
- * everywhere else it takes the page palette (ivory, green, leather, cognac, sage), cross-fading between routes
+ * everywhere else it takes the page palette (ivory, ink, stone, leather, cognac), cross-fading between routes
  * so labels, borders and the progress line always keep strong contrast.
  */
 export function Header() {
@@ -23,18 +23,22 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
   const { scrollYProgress } = useScroll();
+  // Pages that open on a full-bleed photograph: home hero and project pages.
+  const overImage = pathname === '/' || pathname.startsWith('/projects/');
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 32);
+    // On the home page the hero stays pinned while it turns to colour, so the header stays transparent
+    // until the hero has scrolled away.
+    const onScroll = () => setScrolled(window.scrollY > (overImage ? window.innerHeight * 0.8 : 32));
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [overImage]);
 
   useEffect(() => setOpen(false), [pathname]);
 
   const close = useCallback(() => setOpen(false), []);
-  const overHero = pathname === '/' && !scrolled;
+  const overHero = overImage && !scrolled;
 
   return (
     <>

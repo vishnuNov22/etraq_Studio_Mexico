@@ -34,6 +34,9 @@ export type MaterialKey =
   | 'timber' | 'stone' | 'steel' | 'concrete' | 'ceramic' | 'plaster' | 'plants'
   | 'translucent' | 'paint' | 'terrazzo' | 'canopy' | 'textile' | 'leather' | 'brass' | 'glass';
 
+export const projectCategories = ['hospitality', 'residential', 'commercial'] as const;
+export type ProjectCategory = (typeof projectCategories)[number];
+
 export type FeatureLayout = 'wide' | 'portraitLeft' | 'portraitRight' | 'full';
 
 export interface Project {
@@ -41,6 +44,8 @@ export interface Project {
   /** First image is the cover. */
   images: AssetKey[];
   materials: MaterialKey[];
+  /** Filter group on the Projects page. Working assignment — confirm with the studio. */
+  category: ProjectCategory;
   titleVerified: boolean;
   /** Confirmed only — otherwise null and hidden. */
   location: string | null;
@@ -56,94 +61,103 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: 'cafe',
+    category: 'hospitality',
     images: ['cafe', 'basin'],
     materials: ['plaster', 'timber', 'steel', 'translucent', 'ceramic'],
     titleVerified: false,
     location: null,
     year: null,
     layout: 'full',
-    theme: 'leather',
+    theme: 'ivory',
     coverPosition: '50% 55%',
   },
   {
     slug: 'desierto',
+    category: 'hospitality',
     images: ['desiertoWide', 'desiertoDoor', 'desiertoDrape'],
     materials: ['plaster', 'timber', 'steel', 'textile', 'plants'],
     titleVerified: false,
     location: null,
     year: null,
     layout: 'portraitRight',
-    theme: 'cognac',
+    theme: 'ivory',
     coverPosition: '50% 50%',
   },
   {
     slug: 'billar',
+    category: 'hospitality',
     images: ['billar', 'billarLounge'],
     materials: ['paint', 'timber', 'leather', 'brass', 'plants'],
     titleVerified: false,
     location: null,
     year: null,
     layout: 'full',
-    theme: 'green',
+    theme: 'ivory',
     coverPosition: '50% 55%',
   },
   {
     slug: 'bano',
+    category: 'residential',
     images: ['banoB', 'banoA'],
     materials: ['ceramic', 'timber', 'glass', 'stone', 'plants'],
     titleVerified: false,
     location: null,
     year: null,
     layout: 'wide',
-    theme: 'green',
+    theme: 'ivory',
     coverPosition: '50% 50%',
   },
   {
     slug: 'azotea',
+    category: 'residential',
     images: ['azotea', 'recamara', 'estarA', 'estarB'],
     materials: ['timber', 'steel', 'plants', 'concrete', 'textile'],
     titleVerified: false,
     location: null,
     year: null,
     layout: 'portraitLeft',
-    theme: 'sage',
+    theme: 'ivory',
     coverPosition: '50% 50%',
   },
   {
     slug: 'cine',
+    category: 'hospitality',
     images: ['cine'],
     materials: ['timber', 'plaster', 'steel', 'leather'],
     titleVerified: false,
     location: null,
     year: null,
     layout: 'wide',
-    theme: 'leather',
+    theme: 'ivory',
     coverPosition: '50% 50%',
   },
   {
     slug: 'oficina',
+    category: 'commercial',
     images: ['oficinaEscalera', 'oficinaAlta'],
     materials: ['steel', 'translucent', 'timber', 'plants', 'concrete'],
     titleVerified: false,
     location: null,
     year: null,
     layout: 'portraitRight',
-    theme: 'sage',
+    theme: 'ivory',
     coverPosition: '50% 50%',
   },
   {
     slug: 'terraza',
+    category: 'commercial',
     images: ['terraza'],
     materials: ['timber', 'steel', 'translucent', 'plants'],
     titleVerified: false,
     location: null,
     year: null,
     layout: 'portraitLeft',
-    theme: 'green',
+    theme: 'ivory',
     coverPosition: '50% 55%',
   },
   {
     slug: 'sala',
+    category: 'hospitality',
     images: ['sala'],
     materials: ['timber', 'steel', 'textile', 'paint'],
     titleVerified: false,
@@ -155,35 +169,38 @@ export const projects: Project[] = [
   },
   {
     slug: 'cocina',
+    category: 'residential',
     images: ['cocina'],
     materials: ['timber', 'stone', 'plants'],
     titleVerified: false,
     location: null,
     year: null,
     layout: 'portraitRight',
-    theme: 'sage',
+    theme: 'ivory',
     coverPosition: '50% 50%',
   },
   {
     slug: 'vestidor',
+    category: 'residential',
     images: ['vestidor'],
     materials: ['timber'],
     titleVerified: false,
     location: null,
     year: null,
     layout: 'portraitLeft',
-    theme: 'cognac',
+    theme: 'ivory',
     coverPosition: '50% 50%',
   },
   {
     slug: 'fachada',
+    category: 'residential',
     images: ['fachada'],
     materials: ['timber', 'steel', 'paint'],
     titleVerified: false,
     location: null,
     year: null,
     layout: 'wide',
-    theme: 'leather',
+    theme: 'ivory',
     coverPosition: '50% 60%',
   },
 ];

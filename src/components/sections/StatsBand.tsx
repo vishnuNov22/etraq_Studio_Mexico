@@ -3,12 +3,12 @@ import { Reveal } from '@/components/motion/Reveal';
 
 const KEYS = ['area', 'states', 'projects', 'years'] as const;
 
-/** The studio's own figures (from the client's "Experiencia" slide) on the signature green. */
+/** The studio's own figures (from the client's "Experiencia" slide) on neutral ink. */
 export function StatsBand() {
   const t = useTranslations('Stats');
 
   return (
-    <section aria-labelledby="stats-title" className="tone-green grain py-20 md:py-28">
+    <section aria-labelledby="stats-title" className="tone-ink grain py-20 md:py-28">
       <div className="container-x">
         <Reveal>
           <h2 id="stats-title" className="eyebrow mb-12 text-muted md:mb-16">

@@ -161,7 +161,15 @@
         "summary": "Una fachada rosa suave con ventanas de acero negro y un portón revestido de tablones de madera con rica veta.",
         "description": "Una fachada a la calle en rosa suave, con grandes ventanales de acero negro en dos niveles. A nivel de calle, un portón con marco de acero y revestido de tablones verticales de madera, con marcada veta y variación de color, ancla la composición."
       }
-    }
+    },
+    "filterLabel": "Filtrar proyectos por categoría",
+    "categories": {
+      "all": "Todos",
+      "hospitality": "Hospitalidad",
+      "residential": "Residencial",
+      "commercial": "Comercial"
+    },
+    "noResults": "Aún no hay proyectos en esta categoría."
   },
   "Materials": {
     "timber": "Madera",

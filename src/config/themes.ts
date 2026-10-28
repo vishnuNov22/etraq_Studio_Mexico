@@ -4,17 +4,17 @@
  *
  *   home        ivory        — light, the photographs carry the colour
  *   projects    ivory
- *   project     per project  — taken from that project's own materials (green, leather, cognac, sage)
- *   studio      sage         — soft green, human and open
+ *   project     ivory        — clean, neutral; the photographs carry the colour
+ *   studio      stone        — soft warm grey
  *   process     leather      — deep, tactile, handcrafted
- *   contact     green        — the client's signature green
+ *   contact     stone
  */
-export type ThemeName = 'ivory' | 'green' | 'leather' | 'cognac' | 'sage';
+export type ThemeName = 'ivory' | 'ink' | 'leather' | 'cognac' | 'stone';
 
 export const THEME_META_COLOR: Record<ThemeName, string> = {
   ivory: '#f4f1ec',
-  green: '#2f442f',
+  ink: '#161615',
   leather: '#3a2414',
   cognac: '#e9dcc7',
-  sage: '#dfe6da',
+  stone: '#e8e6e1',
 };
